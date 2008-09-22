@@ -1,0 +1,32 @@
+%html
+  %head
+    %title Grasp the Birds Tail - Patrice de Muizon
+    = stylesheet_link_tag 'blueprint/print', :media => 'print'
+    = stylesheet_link_tag 'blueprint/screen', :media => 'screen, projection'
+    <!--[if IE]>
+    = stylesheet_link_tag 'blueprint/ie'
+    <![endif]-->
+    = stylesheet_link_tag 'application'
+  #header
+    #title-container
+      #logo
+        %img{:src => 'images/graspbird1.jpg'}
+      #title-text
+        %h1 Grasp the Birds Tail
+        %h3 by Patrice de Muizon
+    #menu
+      %a{:href => '/'} Home
+      |
+      %a{:href => '/'} Portfolio
+      |
+      %a{:href => '/'} Resoures
+      |
+      %a{:href => '/'} Blog
+
+    #title-end
+  %body
+    %hr
+    #content
+      = yield
+  #footer
+    %hr
