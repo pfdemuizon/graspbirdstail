@@ -1,0 +1,239 @@
+/*--------------------------------------------------------------
+
+  CMS Demo
+  
+  author: Goro Harumi
+
+  Colors:
+  orange: #ff7e00
+  grey: #6b6b6b
+  blue: #507FA3
+  light blue: #B8D1E4
+--------------------------------------------------------------*/
+
+* {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+body {
+  font:62.5% Arial, Helvetica, sans-serif;
+  background:#FFF url(../images/bg.jpg) repeat-x;
+}
+
+p, h2, h3, h4, h5 {
+  font-size:1.2em;
+}
+
+div#wrapper {
+  width:768px;
+  padding-top:8px;
+  margin:25px auto 0;
+  background:url(../images/top.png) no-repeat;
+}
+
+div#masthead {
+  width:768px;
+  background:url(../images/main_bg.png) repeat-y;
+  position:relative;
+}
+
+h1 {
+  font:3.6em 'Trebuchet MS', Arial, Helvetica;
+}
+
+h1 a {
+  position:absolute;
+  width:191px;
+  height:30px;
+  left:40px;
+  top:18px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#ff7e00;
+}
+
+div#masthead ul {
+  float:right;
+  margin-right:22px;
+  position:relative;
+  z-index:2;
+  bottom:-2px;
+}
+
+div#masthead ul li {
+  float:left;
+}
+
+div#masthead ul li a {
+  color:#686868;
+  text-decoration:none;
+  display:block;
+  font-size:1.4em;
+  padding:40px 20px 18px;
+}
+
+div#masthead ul li a:hover,
+div#masthead ul li#current {
+  background:url(../images/nav_bg.png) bottom repeat-x;
+}
+
+div#masthead_image {
+  background:url(../images/image_bg.png) center no-repeat;
+  width:724px;
+  height:148px;
+  clear:both;
+  padding:8px 22px;
+  position:relative;
+  z-index:1;
+}
+
+div#content {
+  width:768px;
+  background:url(../images/main_bg.png) repeat-y;
+}
+
+div#main {
+  padding:0 20px 20px;
+  width:500px;
+  float:left;
+}
+
+h2#page_header {
+  color:#ff7e00;
+  font-size:24px;
+  padding:10px 0 0;
+  line-height:1;
+  margin:0 20px 5px;
+  border-bottom:1px solid #e7e7e7;
+  position:relative;
+}
+
+h2#page_header span {
+  position:relative;
+  background:#FFF;
+  padding-right:10px;
+  bottom:-5px;
+}
+
+div#main a {
+  color:#507FA3;
+}
+
+div#main p {
+  color:#6b6b6b;
+  line-height:2;
+  margin:10px 0;
+}
+
+div#main h3 {
+  margin-top:15px;
+  color:#ff7e00;
+}
+
+div#main blockquote {
+  margin:0 15px;
+  padding:1px 15px;
+  border-left:5px solid #B8D1E4;
+  background:#F0F0F0;
+}
+
+div#main ul {
+  font-size:1.2em;
+  color:#6b6b6b;
+  margin-left:15px;
+}
+
+div#main li {
+  margin:5px 0;
+  padding-left:15px;
+  background:url(../images/square.png) 0 center no-repeat;
+}
+
+div#secondary {
+  padding:15px 20px 20px 0;
+  width:200px;
+  float:left;
+}
+
+div#secondary h3 {
+  text-transform:uppercase;
+  color:#507fa3;
+  margin-bottom:15px;
+}
+
+div#secondary ul#news {
+  margin:15px 0 20px;
+  color:#507fa3;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+}
+
+div#secondary ul#news label {
+  font-weight:bold;
+}
+
+div#secondary ul#news li {
+  margin:10px 0;
+  font-size:1.2em;
+  line-height:1.5em;
+}
+
+div#secondary h4 {
+  color:#ff7e00;
+  text-transform:uppercase;
+  margin-bottom:15px;
+}
+
+div#secondary form p {
+  position:relative;
+  height:30px;
+}
+
+input.subscribe {
+  position:absolute;
+  top:0;
+  height:18px;
+  width:156px;
+  padding:5px;
+  background:url(../images/text_bg.png) repeat-x;
+  border:1px solid #bcbcbc;
+}
+
+input.submit {
+  position:absolute;
+  right:0;
+}
+
+p#footer {
+  height:8px;
+  width:768px;
+  background:url(../images/bottom.png) no-repeat;
+  text-align:center;
+  font-size:1em;
+  color:#686868;
+  padding:15px 0;
+}
+
+p#footer a {
+  color:#686868;
+  text-decoration:none;
+}
+
+p#footer span {
+  position:absolute;
+  text-indent:-9999em;
+}
+
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+  .clearfix {display:block;}
+/* End hide from IE Mac */
