@@ -11,9 +11,9 @@
 <meta name="Author" content="Erwin Aligam - ealigam@gmail.com" />
 <meta name="Robots" content="index,follow" />
 
-<link rel="stylesheet" href="stylesheets/enlighten.css" type="text/css" />
+<%= stylesheet_link_tag 'enlighten.css' %>
 
-<title>Enlighten</title>
+<title>Grasp the Bird's Tail - Patrice de Muizon</title>
 	
 </head>
 
@@ -25,7 +25,7 @@
 	<div id="header">		
 		
 		<div id="logo-box">		
-			<h1 id="logo"><a href="index.html" title="">Grasp the Birds Tail</a></h1>	
+			<h1 id="logo"><a href="index.html" title="">Grasp the Bird's Tail</a></h1>	
 			<h2 id="slogan">by Patrice de Muizon</h2>		
 		</div>				
 				
@@ -35,11 +35,11 @@
 	
 	<div id="menu">
 		<ul>
-			<li><a href="index.html" id="current">Home</a></li>
-			<li><a href="index.html">Portfolio</a></li>
-			<li><a href="index.html">Resources</a></li>
-			<li><a href="index.html">Contact</a></li>
-			<li><a href="index.html">Blog</a></li>			
+			<li><a href="/" id="current">Home</a></li>
+			<li><a href="/">Portfolio</a></li>
+			<li><a href="/">Resources</a></li>
+			<li><a href="/">Contact</a></li>
+			<li><a href="/">Blog</a></li>			
 		</ul>	
 	</div>
 				
@@ -53,8 +53,7 @@
 			
 				<h1>About Patrice</h1>
 				
-        <p>As a guitarist/musician with a programming background, I initially gravitated towards audio technology. At Dolby Laboratories, I provided support to customers developing Dolby technologies and eventually progressed to being a major part of the engineering team that developed Dolby Digital Plus.</p>
-        <p>More recently, I decided to shift my technical focus towards the web, where I felt I could make a difference in helping to create a more just and sustainable society. I joined Radical Designs, a boutique web shop that primarily services nonprofits and social justice organizations, where I helped develop and maintain one of our core web applications that enables clients to organize a large-scale national day of action around their issue.</p>
+        <p><%= link_to "Linked In Profile", "http://www.linkedin.com/in/patricedemuizon", :popup => true %>
 						
 			</div>			
 
@@ -70,39 +69,6 @@
 				</ul>	
 				
 			</div>	
-			
-			<div class="sidebox">	
-			
-				<h1>Sponsors</h1>
-				<ul class="sidemenu">
-					<li><a href="http://www.dreamhost.com/r.cgi?287326" class="top">Dreamhost</a></li>
-					<li><a href="http://www.4templates.com/?aff=ealigam">4templates</a></li>
-					<li><a href="http://store.templatemonster.com/?aff=ealigam">TemplateMonster</a></li>	
-					<li><a href="http://www.fotolia.com/partner/114283">Fotolia.com</a></li>									
-					<li><a href="http://www.bigstockphoto.com/?refid=grKPpdNw6k">BigStockPhoto</a></li> 		
-				</ul>
-				
-			</div>
-			
-			<div class="sidebox">	
-			
-				<h1>Wise Words</h1>
-				<p>&quot;If my life is fruitless, it does not matter who 
-				praises me, and if my life is fruitful, it does not 
-				matter who criticizes me.&quot;</p>					
-				<p class="align-right">- John Bunyan</p>
-					
-			</div>		
-			
-			<div class="sidebox">
-			
-				<h1>Support Styleshout</h1>
-				<p>If you are interested in supporting my work and would like to contribute, you are
-				welcome to make a small donation through the 
-				<a href="http://www.styleshout.com/">donate link</a> on my website - it will 
-				be a great help and will surely be appreciated.</p>	
-				
-			</div>
 			
 			<div class="sidebox">	
 						
@@ -122,30 +88,8 @@
 		<div id="main">		
 		
 			<div class="post">
-			
-				<a name="TemplateInfo"></a>	
-				<h1>Template Info</h1>
-				
-				<p>Posted by <a href="index.html">ealigam</a></p>
-
-        <p>
-          <%= yield %>
-        </p>
-				<p><strong>Enlighten 1.1</strong> is a free, W3C-compliant, CSS-based website template 
-				by <strong><a href="http://www.styleshout.com/">styleshout.com</a></strong>. This work is 
-				distributed under the <a rel="license" href="http://creativecommons.org/licenses/by/2.5/">
-				Creative Commons Attribution 2.5  License</a>, which means that you are free to 
-				use and modify it for any purpose. All I ask is that you include a link back to  
-				<a href="http://www.styleshout.com/">my website</a> in your credits.</p>  
-
-				<p>For more free designs, you can visit 
-				<a href="http://www.styleshout.com/">my website</a> to see 
-				my other works.</p>
-		
-				<p>Good luck and I hope you find my free templates useful!</p>
-				
+        <%= yield %>
 			</div>
-			
 
 	<div id="footer">
 	<p>
@@ -154,8 +98,8 @@
 		   <a href="http://validator.w3.org/check/referer"><strong>XHTML</strong></a>
 	       <br />
 	<!--This theme is free for distriubtion,  so long as  link to openwebdesing.org and dubaiapartments.biz  stay on the theme--> Courtesy <a href="http://www.openwebdesign.org" target="_blank">Open
-Web Design</a><a href="http://www.dubaiapartments.biz" target="_blank"><img src="spacer.gif" width="5" height="5" border="0"/></a>Thanks
-to <a href="http://www.dubaiapartments.biz/" target="_blank">Dubai Hotels</a></p>
+Web Design</a><a href="http://www.dubaiapartments.biz" target="_blank"><img src="spacer.gif" width="5" height="5" border="0"/></a>
+</p>
   </div>
 	
 <!-- wrap ends here -->
