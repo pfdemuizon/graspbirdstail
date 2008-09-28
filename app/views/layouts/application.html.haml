@@ -1,0 +1,82 @@
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :name => "Description", :content => "Information architecture, Web Design, Web Standards." }/
+    %meta{ :name => "Keywords", :content => "your, keywords" }/
+    %meta{ :content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type" }/
+    %meta{ :name => "Distribution", :content => "Global" }/
+    %meta{ :name => "Author", :content => "Erwin Aligam - ealigam@gmail.com" }/
+    %meta{ :name => "Robots", :content => "index,follow" }/
+    = stylesheet_link_tag 'enlighten.css'
+    %title
+      Grasp the Bird's Tail - Patrice de Muizon
+  %body
+    #wrap
+      #header
+        #logo-box
+          %h1#logo
+            %a{ :href => "index.html", :title => "" }
+              Grasp the Bird's Tail
+          %h2#slogan
+            by Patrice de Muizon
+        .headerphoto
+      #menu
+        %ul
+          %li
+            = link_to 'Home', {:action => 'index'}, :id => 'current'
+          %li
+            = link_to 'Portfolio', {:action => 'portfolio'}
+          %li
+            = link_to 'Contact', {:action => 'index'}
+          %li
+            = link_to 'Resources', {:action => 'index'}
+          %li
+            = link_to 'Blog', {:action => 'portfolio'}
+      #content-wrap
+        #content
+          #sidebar
+            .sidebox
+              %h1 Search Box
+              %form.searchform{ :action => "#" }
+                %p
+                  %input.textbox{ :name => "search_query", :type => "text" }/
+                  %input.button{ :name => "search", :type => "submit", :value => "Search" }/
+            .sidebox
+              %h1 About Patrice
+              %p
+                = link_to "Linked In Profile", "http://www.linkedin.com/in/patricedemuizon", :popup => true
+            .sidebox
+              %h1.clear Sidebar Menu
+              %ul.sidemenu
+                %li
+                  %a.top{ :href => "index.html" }
+                    Home
+                %li
+                  %a{ :href => "#TemplateInfo" }
+                    Template Info
+                %li
+                  %a{ :href => "#SampleTags" }
+                    Sample Tags
+                %li
+                  %a{ :href => "http://www.styleshout.com/" }
+                    More Templates...
+                %li
+                  %a{ :href => "http://www.4templates.com/?aff=ealigam" }
+                    Premium Templates
+          #main
+            .post
+              = yield
+            #footer
+              %p
+                Copyright 2008
+                %strong
+                  Grasp the Birds Tail
+                | design by:
+                %a{ :href => "index.html" }
+                  %strong
+                    styleshout
+                |
+                Courtesy
+                %a{ :href => "http://www.openwebdesign.org", :target => "_blank" }
+                  Open Web Design
+                %a{ :href => "http://www.dubaiapartments.biz", :target => "_blank" }
